@@ -2,10 +2,11 @@ import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 export default {
-  entry: './src/scripts/main.js',
+  entry: './src/main.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve('dist'),
+    publicPath: './',
     clean: true,
   },
   module: {
@@ -24,6 +25,7 @@ export default {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
+      filename: 'index.html',
     }),
   ],
   devServer: {
