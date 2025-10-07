@@ -23,13 +23,14 @@ npm install
 "$(dirname "$0")/_/husky.sh"
 npx lint-staged
 ```
-5. Run development server:
-```bash
-npm run start
-```
-6. Build for production:
+5. Build for production:
 ```bash
 npm run build
+
+```
+6. Run development server:
+```bash
+npm run start
 ```
 7. Open `dist/index.html` in your browser.
 
