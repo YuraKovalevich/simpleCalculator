@@ -1,6 +1,8 @@
 import { Calculator } from './core/calculator.js';
 import { Display } from './ui/display.js';
 import { ButtonHandler } from './ui/buttons.js';
+import './ui/theme.js';
+import './styles/styles.css';
 
 const display = new Display('user-input');
 const calculator = new Calculator(display);
